@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="flex flex-col ">
+      <div>
+        <h2 className="text-lg">Welcome to GYAAN-AI</h2>
+      </div>
+      <label className='flex flex-col'>
+        Paste your content to be extracted: 
+        <textarea name="postContent" rows={5} cols={5} className='border-2' />
+      </label>
+      <div className='flex  justify-center'>
+      <button type="submit" className='bg-blue-500 rounded-lg w-16'>Extract</button>
+      </div>
+      
     </div>
+    // <h1 className="text-3xl font-bold underline">
+    // Hello world!
+    // </h1>
+
   );
 }
 
