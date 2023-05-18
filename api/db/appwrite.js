@@ -1,0 +1,1 @@
+// Load appwrite config here
