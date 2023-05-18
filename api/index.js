@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
   res.send("hello from api")
 })
 
-app.listen(port || 5000, () => {
+app.listen(port || 3000, () => {
   console.log("Listening to port " + port)
 
 })
